@@ -1,0 +1,17 @@
+{
+  "name": "koast-angular-mobile",
+  "version": "0.0.1",
+  "homepage": "https://github.com/rangle/koast-angular-mobile",
+  "authors": [
+    "Evan <evan@rangle.io>"
+  ],
+  "description": "mobile features of koast-angular",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
