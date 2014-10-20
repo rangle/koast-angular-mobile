@@ -1,3 +1,4 @@
 'use strict';
 
-angular.module('koastMobileNotifications', []);
+angular.module('koast.mobile.notifications', [])
+  .value('dummyService', 'dummyValue');
