@@ -21,6 +21,12 @@
     "rangle-gulp": "0.0.7"
   },
   "devDependencies": {
-    "karma": "^0.12.24"
+    "chai": "~1.9.2",
+    "karma": "^0.12.24",
+    "karma-chai": "~0.1",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-mocha": "~0.1",
+    "karma-sinon": "~1.0.3",
+    "mocha": "*"
   }
 }

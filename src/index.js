@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('koastAngularMobile', ['koastMobileNotifications']);
+angular.module('koastAngularMobile', ['koast.mobile.notifications']);

@@ -5,14 +5,17 @@ var rg = require('rangle-gulp');
 var exec = require('child_process').exec;
 
 var karmaVendorFiles = [
+  'bower_components/chai/chai.js',
   'bower_components/angular/angular.js',
   'bower_components/angular-mocks/angular-mocks.js',
+  'bower_components/ng-cordova/dist/ng-cordova.js',
+  'bower_components/ng-cordova/dist/ng-cordova-mocks.js',
   'bower_components/sinon-chai/lib/sinon-chai.js',
   'testing/lib/*.js'
 ];
 
 var karmaFiles = [
-  'src/**/*.js'
+  'src/**/**/*.js'
 ];
 
 rg.setLogLevel('info');
@@ -35,7 +38,10 @@ gulp.task('karma-watch', rg.karmaWatch({
   karmaConf: 'testing/karma.conf.js'
 }));
 
-gulp.task('mocha', rg.mocha());
+gulp.task('mocha', rg.mocha({
+  files: 'src/**/**/*.test.js',
+  reporter: 'nyan'
+}));
 
 gulp.task('lint', rg.jshint({
   files: [
